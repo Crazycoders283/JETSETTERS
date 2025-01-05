@@ -1,0 +1,116 @@
+/* Import Work Sans and Poppins fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Work+Sans:wght@400&display=swap');
+
+/* General Footer Styling */
+.footer {
+  background-color: #dbeeff; /* Light blue background */
+  padding: 40px 20px;
+  color: #333; /* Dark text */
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logo-section {
+  text-align: left;
+}
+
+/* 'Connect us' styling */
+.footer-subtitle {
+  font-size: 15.78px; /* Exact size for 'Connect us' */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* Poppins Medium */
+  color: #555; /* Slightly lighter text */
+  margin-bottom: 10px;
+}
+
+/* Styling for Services, Works, and Contact Us Titles */
+.footer-title {
+  font-size: 24px; /* Work Sans Regular */
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400; /* Regular weight */
+  color: #000; /* Black for section titles */
+  margin-bottom: 10px;
+}
+
+/* Footer Links and Contacts */
+.footer-links,
+.footer-contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-contacts li {
+  font-size: 16px; /* Poppins Regular */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-contacts a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px; /* Poppins Regular */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.footer-links a:hover,
+.footer-contacts a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 20px; /* Add spacing between icons */
+  margin-top: 10px;
+}
+
+.social-link {
+  font-size: 20px;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #0056b3; /* Darker blue */
+}
+
+/* Contact Section Icons */
+.footer-contacts i {
+  margin-right: 8px;
+  color: #007bff; /* Icon color */
+}
+
+/* Bottom Section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footer-bottom a:hover {
+  color: #0056b3;
+}

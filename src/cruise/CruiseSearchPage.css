@@ -1,0 +1,106 @@
+.cruise-search-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .header,
+  .footer {
+    background-color: #002855;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .filters-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    margin: 1rem 0;
+  }
+  
+  .filter-inputs {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .filter-inputs select,
+  .filter-inputs input,
+  .filter-inputs button {
+    padding: 0.5rem;
+  }
+  
+  .applied-filters {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .applied-filter {
+    background-color: #dce4f6;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+  }
+  
+  .itinerary-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .itinerary-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .itinerary-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .itinerary-info {
+    padding: 1rem;
+  }
+  
+  .itinerary-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .itinerary-info p {
+    margin: 0.5rem 0;
+  }
+  
+  .view-itinerary {
+    background-color: #002855;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .pagination button {
+    background-color: #002855;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }
+  

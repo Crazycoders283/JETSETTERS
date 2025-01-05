@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); /* Importing Poppins Medium */
+
+/* Slider Section */
+.slider {
+  position: relative;
+  z-index: 99; /* Ensures slider appears above other elements */
+}
+
+.slider .carousel {
+  position: relative;
+}
+
+/* Slider Overlay */
+.slider .carousel::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6); /* Adds a dark overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Caption Styles */
+.slider .carousel .carousel-item .carousel-caption {
+  z-index: 9;
+  bottom: 20%; /* Adjusts caption position */
+  left: 8%;
+  text-align: left;
+}
+
+/* Caption Text */
+.slider .carousel .carousel-item .carousel-caption .slider_des p.heading {
+  font-size: 36px; /* Updated size */
+  font-family: 'Waterbrush', cursive;
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.slider .carousel .carousel-item .carousel-caption .slider_des h2.sub_text {
+  font-size: 86px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+/* Search Bar Section */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: auto; /* Adjust width to content */
+  max-width: 750px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Adds spacing below heading */
+  margin-bottom: 20px; /* Adds spacing above button */
+}
+
+/* Align search bar to the left */
+.search-bar-container {
+  display: flex;
+  justify-content: flex-start; /* Aligns search bar to the left */
+  width: 100%;
+}
+
+/* Filter Item */
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-item p {
+  font-size: 12px;
+  color: #c1c1c1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.filter-item h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Divider between filters */
+.divider {
+  width: 1px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Icon Styles */
+.icon {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* Search Button */
+.search-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* START: Book Now Button Styles */ 
+.book-now-container {
+  margin-top: 0px; /* Adjust spacing between search bar and button */
+  display: flex;
+  justify-content: flex-start; /* Aligns button to the left */
+}
+
+.book-now-btn {
+  background: #0056b3;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background: #004494;
+  transform: scale(1.05);
+}
+/* END: Book Now Button Styles */
+
+/* Media Query: Tablets */
+@media only screen and (max-width: 991px) {
+  .slider .carousel .carousel-item .carousel-caption {
+    bottom: 15%;
+    left: 5%;
+  }
+
+  .slider .carousel .carousel-item .carousel-caption .slider_des h2.sub_text {
+    font-size: 50px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .book-now-btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
+
+/* Media Query: Mobile */
+@media only screen and (max-width: 767px) {
+  .slider .carousel .carousel-item img {
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .slider .carousel .carousel-item .carousel-caption {
+    bottom: 10%;
+    left: 5%;
+  }
+
+  .slider .carousel .carousel-item .carousel-caption .slider_des h2.sub_text {
+    font-size: 40px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .book-now-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
